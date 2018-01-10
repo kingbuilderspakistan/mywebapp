@@ -1,0 +1,96 @@
+<div class="page-header">
+<h1> User Registration</h1>
+</div>
+
+<form ng-submit="register.regUser(regData);">
+<!-- Name -->
+<label>Name:</label>
+<input class="form-control" type="text" name="name" placeholder="Enter Name" ng-model="register.regData.name">
+<br>
+<!--Name Of Father/Husband-->
+<label>Name of Father/Husband:</label>
+<input class="form-control" type="text" name="nameoffatherhusband" placeholder="Enter Name Of Father/Husband" ng-model="register.regData.nameoffatherhusband">
+<br>
+<!-- Residence Address-->
+<label>Residence Address:</label>
+<input class="form-control" type="text" name="residenceaddress" placeholder="Enter Residence Address" ng-model="register.regData.residenceaddress">
+<br>
+<!-- Telephone Office/Residence-->
+<label>Telephone Office/Residence:</label>
+<input class="form-control" type="int" name="telephoneofficeresidence" placeholder="Enter Telephone Office/Residence" ng-model="register.regData.telephoneofficeresidence">
+<br>
+<!-- Mobile Number-->
+<label>Mobile Number:</label>
+<input class="form-control" type="int" name="mobilenumber" placeholder="Enter Mobile Number" ng-model="register.regData.mobilenumber">
+<br>
+<!-- Office Address-->
+<label>Office Address:</label>
+<input class="form-control" type="text" name="officeaddress" placeholder="Enter Office Address" ng-model="register.regData.officeaddress">
+<br>
+<!-- CNIC-->
+<label>CNIC:</label>
+<input class="form-control" type="int" name="cnic" placeholder="Enter CNIC" ng-model="register.regData.cnic">
+<br>
+<!-- Password-->
+<label>Password:</label>
+<input class="form-control" type="text" name="password" placeholder="Enter Password" ng-model="register.regData.password">
+<br>
+
+<!-- Nominee-->
+<label>Nominee:</label>
+<input class="form-control" type="text" name="nominee" placeholder="Enter Nominee" ng-model="register.regData.nominee">
+<br>
+<!-- Relationship-->
+<label>Relationship:</label>
+<input class="form-control" type="text" name="relationship" ng-model="register.regData.relationship">
+<br>
+<!-- Nominee's Address-->
+<label>Nominee's Address:</label>
+<input class="form-control" type="text" name="nomineeaddress" placeholder="Enter Nominee's Address" ng-model="register.regData.nomineeaddress">
+<br>
+<!-- Nominee's CNIC-->
+<label>Nominee's CNIC:</label>
+<input class="form-control" type="int" name="nomineecnic" placeholder="Enter Nominee's CNIC" ng-model="register.regData.nomineecnic">
+<br>
+
+<h1>Particulars of the Apartment / Shop to be booked</h1>
+<br>
+
+<!-- Apartment / Shop No-->
+<label>Apartment/Shop Number:</label>
+<input class="form-control" type="int" name="apartmentshopnumber" placeholder="Enter Apartment/Shop Number" ng-model="register.regData.apartmentshopnumber">
+<br>
+<!-- Ground/Floor-->
+<label>Ground/Floor:</label>
+<input class="form-control" type="text" name="groundfloor" ng-model="register.regData.groundfloor">
+<br>
+<!-- Block-->
+<label>Block:</label>
+<input class="form-control" type="int" name="block" ng-model="register.regData.block">
+<br>
+<!-- Dated-->
+<label>Dated:</label>
+<input class="form-control" type="int" name="dated" placeholder="Enter Date" ng-model="register.regData.dated">
+
+<br>
+<button class="btn btn-primary" type="submit">Register</button>
+</form>
+
+<br>
+<div class="jumborton text-center" ng-show="register.loading">
+	<span class="glyphicon glyphicon-repeat spinner"></span>
+<p>Loading...</p>
+</div>
+
+
+<br>
+
+<div class="row show-hide-message" ng-show="register.successMsg">
+	<div class="alert alert-success">{{register.successMsg}}</div>
+</div>
+
+<br>
+
+<div class="row show-hide-message" ng-show="register.errorMsg">
+	<div class="alert alert-danger">{{register.errorMsg}}</div>
+</div>

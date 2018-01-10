@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+<!-- Cascade Style Sheet-->
+<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+<!-- Main Angular Files-->
+<script src="assets/js/angular.js"></script>
+<script src="assets/js/angular-route.js"></script>
+<script src="assets/js/angular-animate.js"></script>
+
+
+
+
+<!--Angular Config/Routes-->
+<script src="app/app.js"></script>
+<script src="app/routes.js"></script>
+<!--Angular Controllers-->
+<script src="app/controllers/userCtrl.js"></script>
+<script src="app/controllers/newsCtrl.js"></script>
+
+<!--Angular Services-->
+<script src="app/services/userServices.js"></script>
+<script src="app/services/newsServices.js"></script>
+
+
+    <title>Web Application For King Builders</title>
+
+  </head>
+
+  <body ng-app="userApp">
+    
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">KINGS GROUP</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Add News</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/addhome">Home</a></li>
+            <li><a href="/addmodels">Add Models</a></li>
+            
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1><img src="assets/images/logo.png" style="width:150px;height:150px;"> <font size="100">KING BUILDERS WEB APPLICATION</font>
+</h1>
+<p>A Complete Web Solution For Our Administration Department !
+</p>
+        
+      </div>
+
+ <div ng-view></div>     
+</div>
+ <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+
+  </body>
+
+
+</html>
